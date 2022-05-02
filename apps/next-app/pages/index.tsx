@@ -1,9 +1,16 @@
 import styled from 'styled-components';
-
+import { F } from '../components/F';
 const StyledPage = styled.div`
   .page {
   }
 `;
+
+export const R = styled.div`
+  width: 100px;
+  height: 100px;
+  background: red;
+`;
+
 
 export function Index() {
   /*
@@ -20,6 +27,8 @@ export function Index() {
               <span> Hello there, </span>
               Welcome next-app 👋
             </h1>
+            <F data-testid="test" />
+            <R data-testid="test2"/>
           </div>
 
           <div id="hero" className="rounded">
